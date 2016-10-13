@@ -1378,31 +1378,6 @@
     </script>
 
     <script type="text/javascript">
-      function preload( arrayOfImages ) {
-        $( arrayOfImages ).each( function() {
-          $( "<img />" ).attr( "src", this ).appendTo( "body" ).css( "display", "none" );
-        });
-      }
-
-      $( window ).load( function() {
-        preload([
-          "https://dl.dropbox.com/s/c5pm1f2hgt6tmh1/facebook2.png",
-          "https://dl.dropbox.com/s/33cgh9uamho5rcz/twitter2.png",
-          "https://dl.dropbox.com/s/pdp8ehgz2jybq95/googleplus2.png",
-          "https://dl.dropbox.com/s/awb2u1zc32y203o/email2.png",
-          "https://dl.dropbox.com/s/smr64g9ndtns6gx/download2.png",
-          "https://dl.dropbox.com/s/cnw5hibotyyi6z4/download3.png",
-          "https://dl.dropbox.com/s/03ny3xykr4nuge2/wiki2.png",
-          "https://dl.dropbox.com/s/5bg1ezeip8pwtkb/wiki3.png",
-          "https://dl.dropbox.com/s/mztem6vp1arrjbr/close.png",
-          "https://dl.dropbox.com/s/3rz29xmjvbjnmqf/loading.gif",
-          "https://dl.dropbox.com/s/0wjazpisgb8trys/next.png",
-          "https://dl.dropbox.com/s/y0s4i27b8dxw22q/prev.png"
-        ])
-      });
-    </script>
-
-    <script type="text/javascript">
       $( "a[class!='short-comments'][class!='share-link'], #cancel-button, #plug" ).mousedown( function() {
         $( this ).css({
           "position": "relative",
