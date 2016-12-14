@@ -1,6 +1,6 @@
 /* line 7, ../sass/lightbox.sass */
 body:after {
-  content: url(https://dl.dropbox.com/s/mztem6vp1arrjbr/close.png) url(https://dl.dropbox.com/s/y0s4i27b8dxw22q/prev.png) url(https://dl.dropbox.com/s/0wjazpisgb8trys/next.png);
+  content: url(https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/close.png) url(https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/prev.png) url(https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/next.png);
   display: none;
 }
 
@@ -87,7 +87,7 @@ body:after {
   width: 24px;
   height: 24px;
   margin: 0 auto;
-  background: url(https://dl.dropbox.com/s/3rz29xmjvbjnmqf/loading.gif) no-repeat;
+  background: url(https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/loading.gif) no-repeat;
 }
 
 /* line 63, ../sass/lightbox.sass */
@@ -126,7 +126,7 @@ body:after {
 }
 /* line 87, ../sass/lightbox.sass */
 .lb-prev:hover {
-  background: url(https://dl.dropbox.com/s/y0s4i27b8dxw22q/prev.png) left 48% no-repeat;
+  background: url(https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/prev.png) left 48% no-repeat;
 }
 
 /* line 90, ../sass/lightbox.sass */
@@ -136,7 +136,7 @@ body:after {
 }
 /* line 93, ../sass/lightbox.sass */
 .lb-next:hover {
-  background: url(https://dl.dropbox.com/s/0wjazpisgb8trys/next.png) right 48% no-repeat;
+  background: url(https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/next.png) right 48% no-repeat;
 }
 
 /* line 96, ../sass/lightbox.sass */
@@ -193,7 +193,7 @@ body:after {
   width: 17px;
   height: 18px;
   margin-top:2px;
-  background: url(https://dl.dropbox.com/s/mztem6vp1arrjbr/close.png) top right no-repeat;
+  background: url(https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
