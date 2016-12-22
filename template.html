@@ -555,7 +555,7 @@
         z-index: 1;
       }
 
-      .comments {
+      .comments-div {
         background-color: #f0f0f0;
         border-bottom: 3px solid #e2e6e8;
         -moz-border-radius: 0 0 4px 4px;
@@ -1037,8 +1037,8 @@
           </BlogDateHeader>
 
           <div class="post">
-            <div class="comment-bubble" onclick="window.open('<$BlogItemPermalinkUrl$>#disqus_thread','_self')">
-              <a class="short-comments" href="<$BlogItemPermalinkUrl$>#disqus_thread" data-disqus-identifier="<$BlogItemNumber$>">0</a>
+            <div class="comment-bubble" onclick="window.open('<$BlogItemPermalinkUrl$>#comments','_self')">
+              <a class="short-comments" href="<$BlogItemPermalinkUrl$>#comments" data-disqus-identifier="<$BlogItemNumber$>">0</a>
             </div>
 
             <div class="post-body">
@@ -1051,7 +1051,7 @@
 
             <div class="post-footer">
               <div class="post-footer-left">
-                This <span class="future">was</span> posted by <a href="mailto:brad@doomretro.com" onclick="popup(event,this.href,'authoremail',626,436)">Brad Harding</a><span class="timestamp"> <span class="timestamp<$BlogItemNumber$>"><$BlogItemDateTime$></span></span>. <a class="long-comments" href="<$BlogItemPermalinkUrl$>#disqus_thread" data-disqus-identifier="<$BlogItemNumber$>">There are no comments.</a>
+                This <span class="future">was</span> posted by <a href="mailto:brad@doomretro.com" onclick="popup(event,this.href,'authoremail',626,436)">Brad Harding</a><span class="timestamp"> <span class="timestamp<$BlogItemNumber$>"><$BlogItemDateTime$></span></span>. <a class="long-comments" href="<$BlogItemPermalinkUrl$>#comments" data-disqus-identifier="<$BlogItemNumber$>">There are no comments.</a>
               </div>
 
               <script type="text/javascript">
@@ -1089,9 +1089,9 @@
           </div>
 
           <ItemPage>
-            <a id="comment"></a>
             <div class="comments-header"></div>
-            <div class="comments">
+            <div class="comments-div">
+              <a id="comments"></a>
               <div id="disqus_thread"></div>
               <script type="text/javascript">
                 var disqus_shortname = "doomretro";
