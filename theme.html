@@ -10,7 +10,7 @@
   Copyright © 2013-2018 Brad Harding.
 
   DOOM Retro is a fork of Chocolate DOOM.
-  For a list of credits, see <http://credits.doomretro.com>.
+  For a list of credits, see <https://wiki.doomretro.com/CREDITS>.
 
   This file is part of DOOM Retro.
 
@@ -73,7 +73,7 @@
 
     <meta name="description" content="<$BlogDescription$>" />
 
-    <meta property="og:url" content="http://www.doomretro.com/" />
+    <meta property="og:url" content="https://www.doomretro.com/" />
     <meta property="og:title" content="<$BlogTitle$>" />
     <meta property="og:description" content="DOOM Retro is the classic, refined DOOM source port. It represents what I want DOOM to be today, in all its dark, gritty, unapologetically pixelated glory. I've strived to implement a set of features and a certain level of attention to detail and restraint while still upholding a deference for that classic, nostalgic DOOM experience we all hold dear." />
     <meta property="og:image" content="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/share.png" />
@@ -250,6 +250,7 @@
         border-radius: 3px;
         color: #888;
         font: bold 80% 'Roboto Mono', Consolas, 'Courier New';
+        letter-spacing: 1px;
         margin: 0 1px;
         padding: 1px 6px;
         position: relative;
@@ -1128,14 +1129,14 @@
             <OlderPosts><a href="<$OlderPosts$>"></OlderPosts><span>Next</span>&#193;<OlderPosts></a></OlderPosts>
           </div>
           <div id="home">
-            <a href="<$BlogURL$>">&#194;<span>Home</span></a>
+            <a href="https://www.doomretro.com/">&#194;<span>Home</span></a>
           </div>
         </div>
       </div>
 
       <div id="sidebar">
         <div id="title">
-          <a href="<$BlogURL$>"><img alt="" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/title.png" width="246" height="59" /></a>
+          <a href="https://www.doomretro.com/"><img alt="" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/title.png" width="246" height="59" /></a>
         </div>
 
         <div id="description">
@@ -1144,8 +1145,8 @@
 
         <script type="text/javascript">
           // If on the first page...
-          if ( window.location.href === "<$BlogURL$>" ||
-               window.location.href.indexOf( "<$BlogURL$>?zx=" ) > -1 ) {
+          if ( window.location.href === "https://www.doomretro.com/" ||
+               window.location.href.indexOf( "https://www.doomretro.com/?zx=" ) > -1 ) {
 
             // Make the "Home" button smoothly scroll to the top of the page when clicked.
             $( "#home a" ).attr( "href", "#" );
@@ -1166,7 +1167,7 @@
         <div id="buttons">
           <input class="download" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png" onclick="window.open($latest,'_self')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png'" />
 
-          <input class="download" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('http://wiki.doomretro.com/','_blank')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" />
+          <input class="download" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://wiki.doomretro.com/','_blank')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" />
 
           <div id="donate">
           </div>
@@ -1207,7 +1208,7 @@
 
           $( function() {
             // If a search query parameter is in the page's URL...
-            if ( window.location.href.indexOf( "<$BlogURL$>search" ) > -1 ) {
+            if ( window.location.href.indexOf( "https://www.doomretro.com/search" ) > -1 ) {
 
               // Get the search term from the search query parameter.
               var searchTerm = decodeURI( $.urlParam( "q" ).replace( /\+/g, " " ) );
@@ -1312,7 +1313,7 @@
         </div>
 
         <div id="fineprint">
-          <i>DOOM Ret&shy;ro</i> is Copy&shy;right &copy; 2013&ndash;2018 by <a href="mailto:brad@doomretro.com" onclick="popup(event,this.href,'authoremail',626,436)">Brad Hard&shy;ing</a>. All rights re&shy;served. Made in <a target="_blank" href="https://goo.gl/maps/tzJjLD1UDaG2">Wes&shy;tern Syd&shy;ney, Aus&shy;tra&shy;lia</a>. <i>DOOM Ret&shy;ro</i> is free soft&shy;ware: you can re&shy;dis&shy;trib&shy;ute it and/or modi&shy;fy it un&shy;der the terms of the <i><a target="_blank" href="http://wiki.doomretro.com/LICENSE">GNU Gen&shy;er&shy;al Pub&shy;lic Li&shy;cense</a></i> as pub&shy;lished by the <a target="_blank" href="https://www.fsf.org/">Free Soft&shy;ware Found&shy;a&shy;tion</a>, either ver&shy;sion 3 of the Li&shy;cense, or (at your op&shy;tion) any later ver&shy;sion. <i>DOOM Ret&shy;ro</i> is dis&shy;trib&shy;uted in the hope that it will be use&shy;ful, but WITH&shy;OUT ANY WAR&shy;RANTY; with&shy;out even the im&shy;plied war&shy;ranty of MER&shy;CHANT&shy;AB&shy;IL&shy;ITY or FIT&shy;NESS FOR A PAR&shy;TIC&shy;U&shy;LAR PUR&shy;POSE. See the <i><a target="_blank" href="http://wiki.doomretro.com/LICENSE">GNU Gen&shy;er&shy;al Pub&shy;lic Li&shy;cense</a></i> for more de&shy;tails. <i>DOOM</i> is a re&shy;gi&shy;stered trade&shy;mark of <a target="_blank" href="https://www.idsoftware.com/">id Soft&shy;ware LLC</a>, a <a target="_blank" href="https://www.zenimax.com/">Zeni&shy;Max Me&shy;dia</a> com&shy;pany, in the US and/or oth&shy;er coun&shy;tries, and is used with&shy;out per&shy;mis&shy;sion. All oth&shy;er trade&shy;marks are the prop&shy;erty of their re&shy;spect&shy;ive hold&shy;ers. <i>DOOM Ret&shy;ro</i> is in no way af&shy;fil&shy;i&shy;ated with nor en&shy;dorsed by <a target="_blank" href="https://www.idsoftware.com/">id Soft&shy;ware</a>.
+          <i>DOOM Ret&shy;ro</i> is Copy&shy;right &copy; 2013&ndash;2018 by <a href="mailto:brad@doomretro.com" onclick="popup(event,this.href,'authoremail',626,436)">Brad Hard&shy;ing</a>. All rights re&shy;served. Made in <a target="_blank" href="https://goo.gl/maps/tzJjLD1UDaG2">Wes&shy;tern Syd&shy;ney, Aus&shy;tra&shy;lia</a>. <i>DOOM Ret&shy;ro</i> is free soft&shy;ware: you can re&shy;dis&shy;trib&shy;ute it and/or modi&shy;fy it un&shy;der the terms of the <i><a target="_blank" href="https://wiki.doomretro.com/LICENSE">GNU Gen&shy;er&shy;al Pub&shy;lic Li&shy;cense</a></i> as pub&shy;lished by the <a target="_blank" href="https://www.fsf.org/">Free Soft&shy;ware Found&shy;a&shy;tion</a>, either ver&shy;sion 3 of the Li&shy;cense, or (at your op&shy;tion) any later ver&shy;sion. <i>DOOM Ret&shy;ro</i> is dis&shy;trib&shy;uted in the hope that it will be use&shy;ful, but WITH&shy;OUT ANY WAR&shy;RANTY; with&shy;out even the im&shy;plied war&shy;ranty of MER&shy;CHANT&shy;AB&shy;IL&shy;ITY or FIT&shy;NESS FOR A PAR&shy;TIC&shy;U&shy;LAR PUR&shy;POSE. See the <i><a target="_blank" href="https://wiki.doomretro.com/LICENSE">GNU Gen&shy;er&shy;al Pub&shy;lic Li&shy;cense</a></i> for more de&shy;tails. <i>DOOM</i> is a re&shy;gi&shy;stered trade&shy;mark of <a target="_blank" href="https://www.idsoftware.com/">id Soft&shy;ware LLC</a>, a <a target="_blank" href="https://www.zenimax.com/">Zeni&shy;Max Me&shy;dia</a> com&shy;pany, in the US and/or oth&shy;er coun&shy;tries, and is used with&shy;out per&shy;mis&shy;sion. All oth&shy;er trade&shy;marks are the prop&shy;erty of their re&shy;spect&shy;ive hold&shy;ers. <i>DOOM Ret&shy;ro</i> is in no way af&shy;fil&shy;i&shy;ated with nor en&shy;dorsed by <a target="_blank" href="https://www.idsoftware.com/">id Soft&shy;ware</a>.
         </div>
 
         <div id="plug" onclick="window.open('http://sidharthchaturvedi.com/','_blank')">
