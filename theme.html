@@ -1059,14 +1059,11 @@
                 // current date and time, and update it every minute.
                 $( function() {
                   var then = $( ".timestamp<$BlogItemNumber$>" ),
-                      date = moment( new Date( then.html() ) ),
+                      date = moment( new Date( then.html() )),
                       update = function() {
                         then.html( date.fromNow() );
-
-                  // If the post's timestamp is in the future, change the wording.
-                  if ( new Date( "<$BlogItemDateTime$>" ) > new Date() )
-                    $( ".future" ).html( "will be" );
                       };
+                      
                   update();
                   setInterval( update, 60000 );
                   $( ".timestamp" ).css( "display", "inline" );
