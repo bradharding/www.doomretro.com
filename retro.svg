@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20170924 at Wed Nov 27 07:22:55 2019
+Created by FontForge 20170924 at Fri Jan 17 07:24:53 2020
  By www-data
 BradHarding
 </metadata>
@@ -68,11 +68,11 @@ d="M256 0h-64h-64h-64v64h-64v64v64v64v64v64v64v64v64h64v64h64h64h64h64v-64h64v-6
     <glyph glyph-name="one" unicode="1" horiz-adv-x="320" 
 d="M192 0h-64h-64h-64v64v64h64v64v64v64v64v64h-64v64v64h64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64h64v-64v-64h-64z" />
     <glyph glyph-name="two" unicode="2" 
-d="M320 0h-64h-64h-64h-64h-64v64v64v64v64v64h64v64h64h64h64v64v64h-64h-64v-64h-64h-64v64v64h64v64h64h64h64h64v-64h64v-64v-64v-64v-64h-64v-64h-64h-64h-64v-64v-64h64h64h64h64v-64v-64h-64z" />
+d="M320 0h-64h-64h-64h-64h-64v64v64v64v64h64v64h64v64h64h64v64v64h-64h-64v-64h-64h-64v64v64h64v64h64h64h64h64v-64h64v-64v-64v-64v-64h-64v-64h-64h-64v-64h-64v-64h64h64h64h64v-64v-64h-64z" />
     <glyph glyph-name="three" unicode="3" 
 d="M256 0h-64h-64h-64v64h-64v64v64h64h64v-64h64h64v64v64h-64h-64v64v64h64h64v64v64h-64h-64v-64h-64h-64v64v64h64v64h64h64h64h64v-64h64v-64v-64v-64h-64v-64h64v-64v-64v-64v-64h-64v-64h-64z" />
-    <glyph glyph-name="four" unicode="4" 
-d="M320 0h-64v64v64v64v64h-64h-64h-64h-64v64v64v64v64v64v64h64h64v-64v-64v-64v-64h64h64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64h-64z" />
+    <glyph glyph-name="four" unicode="4" horiz-adv-x="512" 
+d="M320 0h-64v64v64h-64h-64h-64h-64v64v64h64v64v64h64v64v64h64v64v64h64h64v-64v-64h-64v-64v-64h-64v-64v-64h64v64v64h64h64v-64v-64h64v-64v-64h-64v-64v-64h-64z" />
     <glyph glyph-name="five" unicode="5" 
 d="M256 0h-64h-64h-64v64h-64v64v64h64h64v-64h64h64v64v64h-64h-64h-64h-64v64v64v64v64v64v64h64h64h64h64h64h64v-64v-64h-64h-64h-64h-64v-64v-64h64h64h64v-64h64v-64v-64v-64v-64h-64v-64h-64z" />
     <glyph glyph-name="six" unicode="6" 
@@ -123,7 +123,7 @@ d="M320 0h-64v64v64h-64v64h-64v-64v-64v-64h-64h-64v64v64v64v64v64v64v64v64v64v64
     <glyph glyph-name="L" unicode="L" 
 d="M320 0h-64h-64h-64h-64h-64v64v64v64v64v64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64h64h64h64h64v-64v-64h-64z" />
     <glyph glyph-name="M" unicode="M" horiz-adv-x="512" 
-d="M192 320v64h-64v-64v-64v-64v-64v-64v-64h-64h-64v64v64v64v64v64v64v64v64v64v64h64h64v-64h64v-64h64v64h64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64h-64h-64v64v64v64v64v64v64h-64v-64h-64z" />
+d="M192 128v64v64h-64v-64v-64v-64v-64h-64h-64v64v64v64v64v64v64v64v64v64v64h64h64v-64v-64h64v-64v-64h64v64v64h64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64h-64h-64v64v64v64v64h-64v-64v-64h-64z" />
     <glyph glyph-name="N" unicode="N" horiz-adv-x="512" 
 d="M384 0h-64v64h-64v64v64h-64v64v64h-64v-64v-64v-64v-64v-64h-64h-64v64v64v64v64v64v64v64v64v64v64h64h64v-64h64v-64v-64h64v-64v-64h64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64h-64z" />
     <glyph glyph-name="O" unicode="O" 
