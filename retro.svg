@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20170924 at Sun Jan 26 08:06:32 2020
+Created by FontForge 20170924 at Sat Jul  4 06:19:50 2020
  By www-data
 Anonymous
 </metadata>
@@ -236,8 +236,10 @@ d="M384 64h-64v64h-64h-64h-64v-64h-64h-64v64v64h64v64v64v64h-64v64v64h64h64v-64h
 d="M192 0h-64v64h-64h-64v64h64h64v64h-64h-64v64h64h64v64h-64v64h-64v64v64v64v64h64h64v-64v-64v-64h64h64v64v64v64h64h64v-64v-64v-64v-64h-64v-64h-64v-64h64h64v-64h-64h-64v-64h64h64v-64h-64h-64v-64h-64z" />
     <glyph glyph-name="brokenbar" unicode="&#xa6;" horiz-adv-x="192" 
 d="M64 0h-64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64h-64zM64 384h-64v64v64v64v64h64h64v-64v-64v-64v-64h-64z" />
-    <glyph glyph-name="section" unicode="&#xa7;" 
-d="M256 -64h-64h-64h-64h-64v64v64h64h64h64h64v64h-64h-64h-64v64h-64v64v64v64v64h64v64h-64v64v64h64v64h64h64h64h64h64v-64v-64h-64h-64h-64h-64v-64h64h64h64v-64h64v-64v-64v-64v-64h-64v-64h64v-64v-64h-64v-64h-64zM192 256h64v64v64h-64h-64v-64v-64h64z" />
+    <glyph glyph-name="section" unicode="&#xa7;" horiz-adv-x="896" 
+d="M768 -128h-64h-64v64h64v64v64v64v64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64h-64zM512 -128h-64v64v64v64v64v64v64v64v64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64h-64zM320 -128h-64v64v64v64v64v64v64v64
+v64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64v-64h-64zM128 -128h-64h-64v64v64v64v64v64v64h64h64h64v-64v-64v-64v-64v-64v-64h-64zM64 320h-64v64v64v64v64v64v64h64h64h64v-64h-64v-64v-64v-64v-64v-64h-64zM768 576h-64h-64v64v64h64h64
+h64v-64v-64h-64z" />
     <glyph glyph-name="dieresis" unicode="&#xa8;" 
 d="M320 512h-64h-64h-64h-64h-64v64v64h64h64h64h64h64h64v-64v-64h-64z" />
     <glyph glyph-name="copyright" unicode="&#xa9;" horiz-adv-x="640" 
