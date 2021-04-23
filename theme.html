@@ -785,37 +785,6 @@
         clear: both;
       }
 
-      #fb {
-        background-color: rgba(172, 168, 164, 0.33);
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-        -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
-        -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
-        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
-        font: 16px Retro, sans-serif;
-        margin: 20px 39px 0;
-        padding: 6px;
-        transition: background-color 0.2s ease;
-        word-spacing: -2px;
-      }
-
-      #fb:hover {
-        background-color: rgba(172, 168, 164, 0.5);
-      }
-
-      #likes {
-        background-color: #505050;
-        -moz-border-radius: 2px;
-        -webkit-border-radius: 2px;
-        border-radius: 2px;
-        -moz-box-shadow: inset 0 0 30px #333;
-        -webkit-box-shadow: inset 0 0 30px #333;
-        box-shadow: inset 0 0 30px #333;
-        clear: both;
-        padding: 5px;
-      }
-
       #fineprint {
         background-color: rgba(172, 168, 164, 0.33);
         -moz-border-radius: 3px;
@@ -827,7 +796,7 @@
         color: #404040;
         font: bold 9px Montserrat, sans-serif;
         line-height: 11px;
-        margin: 20px 38px 0;
+        margin: 20px 39px 0;
         padding: 10px 24px;
         text-shadow: 0 0 1px rgba(80, 80, 80, 0.5);
         transition: background-color 0.2s ease;
@@ -1321,15 +1290,6 @@
       });
       $( "#tweets" ).on( "mouseout", function() {
         $( "#timeline" ).css( "background-color", "#505050" );
-      });
-    </script>
-
-    <script type="text/javascript">
-      $( "#fb" ).mouseover( function() {
-        $( "#likes" ).css( "background-color", "#606060" );
-      });
-      $( "#fb" ).on( "mouseout", function() {
-        $( "#likes" ).css( "background-color", "#505050" );
       });
     </script>
 
