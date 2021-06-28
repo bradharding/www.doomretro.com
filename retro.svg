@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20190801 at Mon Jun 28 07:00:23 2021
+Created by FontForge 20190801 at Mon Jun 28 07:04:40 2021
  By root
 BradHarding
 </metadata>
@@ -31,7 +31,7 @@ d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" />
  />
     <glyph glyph-name="nonmarkingreturn" horiz-adv-x="341" 
  />
-    <glyph glyph-name="space" unicode=" " horiz-adv-x="256" 
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="320" 
  />
     <glyph glyph-name="exclam" unicode="!" horiz-adv-x="192" 
 d="M64 0h-64v64v64h64h64v-64v-64h-64zM64 192h-64v64v64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64h-64z" />
@@ -222,7 +222,7 @@ d="M64 -64h-64v64v64v64v64v64v64v64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64
 d="M64 -64h-64v64v64h64v64v64v64h64v64v64h-64v64v64v64h-64v64v64h64h64v-64h64v-64v-64v-64h64v-64h64v-64v-64h-64v-64h-64v-64v-64v-64h-64v-64h-64z" />
     <glyph glyph-name="asciitilde" unicode="~" 
 d="M0 448v64v64h64v64h64h64v-64h64h64v64h64v-64v-64h-64v-64h-64h-64v64h-64h-64v-64h-64z" />
-    <glyph glyph-name="uni00A0" unicode="&#xa0;" horiz-adv-x="256" 
+    <glyph glyph-name="uni00A0" unicode="&#xa0;" horiz-adv-x="320" 
  />
     <glyph glyph-name="exclamdown" unicode="&#xa1;" horiz-adv-x="192" 
 d="M64 0h-64v64v64v64v64v64v64v64h64h64v-64v-64v-64v-64v-64v-64v-64h-64zM64 512h-64v64v64h64h64v-64v-64h-64z" />
