@@ -780,8 +780,8 @@
         color: #fff;
         font: bold 9px Montserrat, sans-serif;
         line-height: 11px;
-        margin: 20px 22px 0;
-        opacity: 0.8;
+        margin: 40px 25px 0;
+        opacity: 0.6;
         padding: 10px 0 12px;
       }
 
@@ -795,7 +795,7 @@
       }
 
       #plug {
-        margin-top: 30px;
+        margin-top: 50px;
         text-align: center;
         transition: background-color 0.2s ease;
       }
@@ -827,7 +827,7 @@
         font: bold 60% Montserrat, sans-serif;
         line-height: 80%;
         margin-top: 4px;
-        opacity: 0.8;
+        opacity: 0.6;
       }
 
       #footer {
@@ -1020,133 +1020,6 @@
           <input class="download" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" />
 
           <div id="donate">
-          </div>
-        </div>
-
-        <div id="search-box" onclick="$('#search-field').focus()">
-          <form action="/search" id="search-form" method="get" name="search-form">
-            <input id="search-field" name="q" type="text" value="" autocomplete="off" autocorrect="off" autocapitalize="off" /><img alt="" id="cancel-button" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/cancel.png" width="8" height="8" onclick="$('#search-field').val('');$(this).css('visibility','hidden')" />
-          </form>
-        </div>
-
-        <script type="text/javascript">
-          var searchResults = 0;
-
-          // Get a parameter from the current page's URL.
-          $.urlParam = function( name ) {
-            var results = new RegExp( "[\\?&]" + name +
-              "=([^&#]*)" ).exec( top.window.location.href );
-            return ( results !== null ? results[1] : 0 );
-          }
-
-          // For every instance of searchTerm found, change it to a link that
-          // links to the next instance of searchTerm, and apply a "search-term"
-          // class to style.
-          $.fn.highlight = function( searchTerm ) {
-            var regex = new RegExp( searchTerm, "gi" );
-            return this.each( function () {
-              $( this ).contents().filter( function() {
-                return ( this.nodeType == 3 && regex.test( this.nodeValue ) );
-              }).replaceWith( function() {
-                return ( this.nodeValue || "" ).replace( regex, function( match ) {
-                  return ( "<a id='" + ( ++searchResults ) + "' href='#" + ( searchResults + 1 ) +
-                    "' class='search-term'>" + match + "</a>" );
-                });
-              });
-            });
-          };
-
-          $( function() {
-            // If a search query parameter is in the page's URL...
-            if ( window.location.href.indexOf( "search" ) > -1 ) {
-
-              // Get the search term from the search query parameter.
-              var searchTerm = decodeURI( $.urlParam( "q" ).replace( /\+/g, " " ) );
-
-              if ( searchTerm ) {
-
-                // Put the search term in the search field.
-                $( "#search-field" ).val( searchTerm );
-
-                // Highlight every instance of the search term in the text.
-                $( ".post-body *" ).highlight( searchTerm );
-
-                // Link the last search term to the first one.
-                $( "#" + searchResults ).attr( "href", "#1" );
-
-                // Display the search results at the top of the page.
-                if ( !searchResults ) {
-                  $( "#search-results" ).html( "There are no search results for <span>" +
-                    searchTerm + "</span>." );
-
-                  // Remove the link from the "Next" button.
-                  $( "#next a" ).replaceWith( function() {
-                    return $( this ).contents();
-                  });
-                } else if ( searchResults == 1 ) {
-                  $( "#search-results" ).html( "There is 1 search result for <a href='#1'>" +
-                    searchTerm + "</a>." );
-                } else {
-                  $( "#search-results" ).html( "There are " + searchResults +
-                    " search results for <a href='#1'>" + searchTerm + "</a>." );
-                }
-
-                // Make each search term scroll smoothly to the next one when clicked.
-                $( "#search-results a, .search-term" ).click( function( event ) {
-                  $( "html, body" ).animate({
-                    scrollTop: $( $.attr( this, "href" ) ).offset().top - $( window ).height() / 2
-                  }, 500 );
-                  event.preventDefault();
-                });
-
-                // Give each search term a mousedown effect.
-                $( "#search-results a, .search-term" ).mousedown( function() {
-                  $( this ).css({
-                    "position": "relative",
-                    "top": "1px"
-                  });
-                });
-                $( "#search-results a, .search-term" ).on( "mouseup mouseout", function() {
-                  $( this ).css({
-                    "position": "static",
-                    "top": "0"
-                  });
-                });
-              }
-            }
-
-            // Show or hide the cancel button as necessary.
-            $( "#cancel-button" ).css( "visibility", $( "#search-field" ).val() ? "visible" : "hidden" );
-          });
-
-          // Show or hide the cancel button as necessary as text is entered into
-          // the search field.
-          $( "#search-field" ).on( "change input keydown paste", function() {
-            $( "#cancel-button" ).css( "visibility", $( "#search-field" ).val() ?
-              "visible" : "hidden" );
-          });
-
-          // Trim the text in the search field of any whitespace and make sure it
-          // isn't empty before submitting it.
-          $( "#search-field" ).keypress( function( event ) {
-            if ( event.which == 13 ) {
-              $( "#search-field" ).val( $.trim( $( "#search-field" ).val() ) );
-              if ( !$( "#search-field" ).val() ) {
-                event.preventDefault();
-              }
-            }
-          });
-        </script>
-
-        <div id="tweets">
-          <div>
-            <div id="tweets-header-left">
-              <a href="https://twitter.com/doomretro" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-chrome="nofooter" data-theme="light" data-size="large"></a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            </div>
-          </div>
-          <div id="timeline">
-            <a class="twitter-timeline" data-height="500" data-theme="light" data-link-color="#E81C4F" href="https://twitter.com/doomretro?ref_src=twsrc%5Etfw">Tweets by doomretro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
 
