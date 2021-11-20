@@ -605,7 +605,7 @@
         cursor: pointer;
       }
 
-      #donate {
+      #gap {
         height: 41px;
         margin: 0 0 760px 4px;
         width: 214px;
@@ -631,19 +631,15 @@
       #plug {
         text-align: center;
         transition: background-color 0.2s ease;
-      }
-
-      #plug:hover {
-        cursor: pointer;
-      }
-
-      #plug-text {
-        color: #ddd;
         opacity: 0.9;
         font: bold 100% Montserrat, sans-serif;
      }
 
-      #plug-text:hover {
+      #plug a {
+        color: #ddd;
+     }
+
+      #plug a:hover {
         color: #fff !important;
         opacity: 1.0 !important;
       }
@@ -836,14 +832,12 @@
 
           <input class="download" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" />
 
-          <div id="donate">
+          <div id="gap">
           </div>
         </div>
 
-        <div id="plug" onclick="window.open('https://twitter.com/BusterToon','_blank')">
-          <div id="plug-text">
-            Artwork by @BusterToon.
-          </div>
+        <div id="plug">
+          <a target="_blank" href="https://twitter.com/BusterToon">Artwork by @BusterToon.</a>
         </div>
 
         <div id="fineprint">
