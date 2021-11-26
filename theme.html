@@ -597,10 +597,10 @@
         text-align: center;
       }
 
-      .download {
+      .button {
         height: 41px;
         margin-bottom: 2px;
-        width: 214px;
+        width: 210px;
         cursor: pointer;
       }
 
@@ -829,9 +829,9 @@
         </script>
 
         <div id="buttons">
-          <input class="download" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png" onclick="window.open($latest,'_self')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png'" />
+          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png" onclick="window.open($latest,'_self')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png'" />
 
-          <input class="download" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" />
+          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" />
 
           <div id="gap">
           </div>
@@ -885,13 +885,13 @@
     </script>
 
     <script type="text/javascript">
-      $( "a[class!='short-comments'][class!='share-link'], #cancel-button, #plug" ).mousedown( function() {
+      $( "a[class!='short-comments'][class!='share-link'], #plug" ).mousedown( function() {
         $( this ).css({
           "position": "relative",
           "top": "1px"
         });
       });
-      $( "a[class!='short-comments'][class!='share-link'], #cancel-button, #plug" ).on( "mouseup mouseout", function() {
+      $( "a[class!='short-comments'][class!='share-link'], #plug" ).on( "mouseup mouseout", function() {
         $( this ).css({
           "position": "static",
           "top": "0"
