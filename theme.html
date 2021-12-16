@@ -564,16 +564,17 @@
 
       #gap {
         height: 41px;
-        margin: 0 0 606px 4px;
+        margin: 0 0 515px 4px;
         width: 214px;
       }
 
       #plug {
         font: 800 100% Montserrat, sans-serif;
-        margin: 0 26px 75px;
+        margin: 0 26px 168px;
         opacity: 0.3;
         text-align: right;
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+        transform: rotate(6deg);
       }
 
       #plug a {
@@ -885,15 +886,6 @@
           "top": "0"
         });
         $( ".share-icon" ).qtip( "reposition" );
-      });
-    </script>
-
-    <script type="text/javascript">
-      $( "#plug" ).mouseover( function() {
-        $( "#plug-image" ).css( "opacity", "1.0" );
-      });
-      $( "#plug" ).mouseout( function() {
-        $( "#plug-image" ).css( "opacity", "0" );
       });
     </script>
 
