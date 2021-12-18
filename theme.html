@@ -817,14 +817,15 @@
         $( ".share-icon" ).each( function() {
           $( this ).qtip({
             style: {
-              classes: "tooltip"
+              classes: "tooltip",
+              tip: {
+                  width: 8,
+                  height: 6
+              }
             },
             position: {
               my: "bottom center",
-              at: "top center",
-              adjust: {
-                y: -1
-              }
+              at: "top center"
             }
           });
         });
