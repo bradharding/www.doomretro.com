@@ -576,7 +576,7 @@
         width: 214px;
       }
 
-      #plug {
+      #attribution {
         font: 800 90% Montserrat, sans-serif;
         margin: 0 6px 168px;
         opacity: 0.6;
@@ -585,12 +585,12 @@
         transform: rotate(6deg);
       }
 
-      #plug a {
+      #attribution a {
         color: #411513;
       }
 
-      #plug a:hover {
-        color: #fff !important;
+      #attribution a:hover {
+        color: #aaa !important;
         opacity: 1.0 !important;
       }
 
@@ -784,7 +784,7 @@
           </div>
         </div>
 
-        <div id="plug">
+        <div id="attribution">
           <a target="_blank" href="https://twitter.com/BusterToon">@BusterToon</a>
         </div>
 
@@ -833,13 +833,13 @@
     </script>
 
     <script type="text/javascript">
-      $( "a[class!='short-comments'][class!='share-link'], #plug" ).mousedown( function() {
+      $( "a[class!='short-comments'][class!='share-link'], #attribution" ).mousedown( function() {
         $( this ).css({
           "position": "relative",
           "top": "1px"
         });
       });
-      $( "a[class!='short-comments'][class!='share-link'], #plug" ).on( "mouseup mouseout", function() {
+      $( "a[class!='short-comments'][class!='share-link'], #attribution" ).on( "mouseup mouseout", function() {
         $( this ).css({
           "position": "static",
           "top": "0"
