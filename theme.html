@@ -146,12 +146,14 @@
       img {
         border: none;
         user-drag: none;
+        -webkit-user-drag: none;
       }
 
       a,
       input {
-        user-drag: none;
         transition: all 0.2s ease;
+        user-drag: none;
+        -webkit-user-drag: none;
       }
 
       a:link,
@@ -559,10 +561,12 @@
       }
 
       .button {
+        cursor: pointer;
         height: 36px;
         margin-bottom: 5px;
         width: 210px;
-        cursor: pointer;
+        -webkit-user-drag: none;
+        user-drag: none;
       }
 
       #gap {
