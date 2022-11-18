@@ -416,8 +416,17 @@
       }
 
       ul {
-        list-style-type: square;
+        list-style: none;
         padding-left: 17px;
+      }
+
+      ul li::before {
+        content: "\25aa";
+        color: #6a8236;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
       }
 
       ul li:first-child {
