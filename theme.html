@@ -811,6 +811,11 @@
               }, 500 );
               event.preventDefault();
             });
+
+            // Remove the link to the first page from the page's title.
+            $( "#title a" ).replaceWith( function() {
+              return $( this ).contents();
+            });
           }
         </script>
 
