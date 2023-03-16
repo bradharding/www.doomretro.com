@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20190801 at Sun Oct 23 04:08:38 2022
+Created by FontForge 20190801 at Thu Mar 16 07:02:11 2023
  By root
 BradHarding
 </metadata>
@@ -18,7 +18,7 @@ BradHarding
     descent="-256"
     x-height="512"
     cap-height="640"
-    bbox="-128 -192 896 768"
+    bbox="-128 -192 896 704"
     underline-thickness="51"
     underline-position="-153"
     unicode-range="U+0020-3000"
@@ -133,7 +133,7 @@ d="M64 0h-64v64v64v64v64v64v64v64v64v64v64h64h64h64h64h64v-64h64v-64v-64v-64v-64
     <glyph glyph-name="Q" unicode="Q" 
 d="M320 -64h-64h-64v64h-64h-64v64h-64v64v64v64v64v64v64v64v64h64v64h64h64h64h64v-64h64v-64v-64v-64v-64v-64v-64v-64v-64h-64v-64h64v-64h-64zM192 128h64v64v64v64v64v64v64h-64h-64v-64v-64v-64v-64v-64v-64h64z" />
     <glyph glyph-name="R" unicode="R" 
-d="M320 0h-64v64v64h-64v64h-64v-64v-64v-64h-64h-64v64v64v64v64v64v64v64v64v64v64h64h64h64h64h64v-64h64v-64v-64v-64v-64v-64h-64v-64v-64h64v-64v-64h-64zM192 320h64v64v64v64h-64h-64v-64v-64v-64h64z" />
+d="M320 0h-64v64v64h-64v64h-64v-64v-64v-64h-64h-64v64v64v64v64v64v64v64v64v64v64h64h64h64h64h64v-64h64v-64v-64v-64v-64v-64h-64v-64h64v-64v-64v-64h-64zM192 320h64v64v64v64h-64h-64v-64v-64v-64h64z" />
     <glyph glyph-name="S" unicode="S" 
 d="M256 0h-64h-64h-64v64h-64v64v64h64h64v-64h64h64v64v64h-64h-64h-64v64h-64v64v64v64v64h64v64h64h64h64h64v-64h64v-64v-64h-64h-64v64h-64h-64v-64v-64h64h64h64v-64h64v-64v-64v-64v-64h-64v-64h-64z" />
     <glyph glyph-name="T" unicode="T" 
@@ -251,12 +251,8 @@ d="M128 -128v64h-64v64h-64v64h64v64h64v64h64v64h64v64h-64v64h-64v64h-64v64h-64v6
     <glyph glyph-name="Acircumflex" unicode="&#xc2;" horiz-adv-x="896" 
 d="M768 -128h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64v64v64v64h64h64h64h64h64h64h64h64h64h64h64h64h64v-64v-64v-64h-64zM768 192h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64v64v64v64h64h64h64h64h64h64h64h64h64h64h64h64h64v-64v-64v-64h-64zM768 512
 h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64v64v64v64h64h64h64h64h64h64h64h64h64h64h64h64h64v-64v-64v-64h-64z" />
-    <glyph glyph-name="Atilde" unicode="&#xc3;" horiz-adv-x="960" 
-d="M832 -192h-64h-64v64h-64h-64h-64h-64v64v64v64v64v64v64h64h64h64h64h64h64h64v-64v-64v-64v-64v-64v-64v-64h-64zM320 -64h-64h-64v64h-64h-64h-64v64v64v64v64h64h64h64h64h64h64v-64v-64v-64v-64v-64h-64zM832 320h-64h-64h-64h-64h-64h-64v64v64v64v64v64v64h64h64
-h64h64v64h64h64h64v-64v-64v-64v-64v-64v-64v-64h-64zM320 320h-64h-64h-64h-64h-64v64v64v64v64h64h64h64v64h64h64h64v-64v-64v-64v-64v-64h-64z" />
-    <glyph glyph-name="Adieresis" unicode="&#xc4;" horiz-adv-x="896" 
-d="M384 192v64h-64v64h-64v64h-64v64h-64v64h64h64v64v64v64v64h64h64h64h64h64v-64v-64v-64v-64h64h64v-64h-64v-64h-64v-64h-64v-64h-64v-64h-64zM768 0h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64h-64v64v64v64h64h64v-64h64h64h64h64h64h64h64h64h64v64h64h64v-64
-v-64v-64h-64z" />
+    <glyph glyph-name="Atilde" unicode="&#xc3;" horiz-adv-x="896" 
+d="M640 0v64h-64v64h-64v64h-64v64h-64v-64h-64v-64h-64v-64h-64v-64h-64v64h-64v64h-64v64h64v64h64v64h64v64h64v64h64v64h64v64h64v-64h64v-64h64v-64h64v-64h64v-64h64v-64h64v-64h-64v-64h-64v-64h-64z" />
     <glyph glyph-name="Euro" unicode="&#x20ac;" horiz-adv-x="512" 
 d="M384 0h-64h-64h-64h-64v64h-64v64v64h-64v64h64v64h-64v64h64v64v64h64v64h64h64h64h64h64v-64v-64h-64h-64h-64h-64v-64h64h64v-64h-64h-64v-64h64h64v-64h-64h-64v-64h64h64h64h64v-64v-64h-64z" />
     <glyph glyph-name="uni3000" unicode="&#x3000;" horiz-adv-x="1024" 
