@@ -862,9 +862,7 @@
           });
         });
       });
-    </script>
 
-    <script type="text/javascript">
       var disqus_shortname = "doomretro";
       ( function () {
         var s = document.createElement( "script" );
@@ -873,9 +871,7 @@
         s.src = "//" + disqus_shortname + ".disqus.com/count.js";
         ( document.getElementsByTagName( "head" )[0] || document.getElementsByTagName( "body" )[0] ).appendChild( s );
       }() );
-    </script>
 
-    <script type="text/javascript">
       $( "a[class!='short-comments'][class!='share-link'], #attribution" ).mousedown( function() {
         $( this ).css({
           "position": "relative",
@@ -888,9 +884,7 @@
           "top": "0"
         });
       });
-    </script>
 
-    <script type="text/javascript">
       $( ".comment-bubble" ).mousedown( function() {
         $( this ).css( "top", "11px" );
       });
@@ -903,9 +897,7 @@
       $( ".comment-bubble a" ).on( "mouseup mouseout", function() {
         $( this ).parent().css( "top", "10px" );
       });
-    </script>
 
-    <script type="text/javascript">
       $( ".share-icon" ).mousedown( function() {
         $( this ).css({
           "position": "relative",
@@ -920,9 +912,7 @@
         });
         $( ".share-icon" ).qtip( "reposition" );
       });
-    </script>
 
-    <script type="text/javascript">
       $.get( "https://api.github.com/repos/bradharding/doomretro/releases/latest", function( data ) {
         if ( navigator.userAgent.indexOf( "WOW64" ) != -1 || navigator.userAgent.indexOf( "Win64" ) != -1 )
           $latest = data.assets[1].browser_download_url;
