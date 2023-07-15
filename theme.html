@@ -542,7 +542,7 @@
 
       #pagination {
         color: #eaeaea;
-        font: 16px Retro, sans-serif;
+        font: 15px 'Roboto Condensed', sans-serif;
         padding: 32px 53px 27px 60px;
       }
 
@@ -560,7 +560,8 @@
       }
 
       #back span {
-        padding-left: 3px;
+        font: 16px Retro;
+        padding-right: 3px;
       }
 
       #next {
@@ -570,7 +571,8 @@
       }
 
       #next span {
-        padding-right: 3px;
+        font: 16px Retro;
+        padding-left: 3px;
       }
 
       #home {
@@ -580,7 +582,8 @@
       }
 
       #home span {
-        padding-left: 5px;
+        font: 16px Retro;
+        padding-right: 5px;
       }
 
       #title {
@@ -776,13 +779,13 @@
 
         <div id="pagination">
           <div id="back">
-            <NewerPosts><a href="<$NewerPosts$>"></NewerPosts>&#192;<span>Back</span><NewerPosts></a></NewerPosts>
+            <NewerPosts><a href="<$NewerPosts$>"></NewerPosts><span>&#192;</span>Back<NewerPosts></a></NewerPosts>
           </div>
           <div id="next">
-            <OlderPosts><a href="<$OlderPosts$>"></OlderPosts><span>Next</span>&#193;<OlderPosts></a></OlderPosts>
+            <OlderPosts><a href="<$OlderPosts$>"></OlderPosts>Next<span>&#193;</span><OlderPosts></a></OlderPosts>
           </div>
           <div id="home">
-            <a href="https://www.doomretro.com/">&#194;<span>Home</span></a>
+            <a href="https://www.doomretro.com/"><span>&#194;</span>Home</a>
           </div>
         </div>
       </div>
