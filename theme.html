@@ -667,12 +667,6 @@
         return text.replace( "<$BlogTitle$>", "%23" +
           ( ( "<$BlogTitle$>" ).replace( /\s/g, "" ) ).toLowerCase() );
       }
-
-      function popup( event, url, name, width, height ) {
-        window.open( url, name, "width=" + width + ", height=" + height + ", left=" +
-          ( ( screen.width - width - 8 ) / 2 ) + ", top=" + ( ( screen.height - height - 66 ) / 2 ) );
-        event.preventDefault();
-      }
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
