@@ -93,15 +93,17 @@
     <meta name="twitter:description" content="<$BlogDescription$>">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/share.png" />
 
-    <script src="https://rawgit.com/bradharding/www.doomretro.com/master/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-    <script src="https://rawgit.com/bradharding/www.doomretro.com/master/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
-    <link href="https://rawgit.com/bradharding/www.doomretro.com/master/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/reset.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://rawgit.com/bradharding/www.doomretro.com/master/lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/lightbox.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://rawgit.com/bradharding/www.doomretro.com/master/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
 
     <style type="text/css">
       body {
@@ -678,10 +680,12 @@
     </style>
 
     <script type="text/javascript">
+      //<![CDATA[
       function hashtag( text ) {
         return text.replace( "<$BlogTitle$>", "%23" +
           ( ( "<$BlogTitle$>" ).replace( /\s/g, "" ) ).toLowerCase() );
       }
+      //]]>
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -734,19 +738,26 @@
               </div>
 
               <script type="text/javascript">
-                // Change the post's timestamp to an expression relative to the
-                // current date and time, and update it every minute.
-                $( function() {
-                  var then = $( ".timestamp<$BlogItemNumber$>" ),
-                      date = moment( new Date( then.html() )),
-                      update = function() {
-                        then.html( date.fromNow() );
-                      };
+              //<![CDATA[
+              $(function () {
+                var then = $(".timestamp<$BlogItemNumber$>");
+                if (!then.length) return;
 
-                  update();
-                  setInterval( update, 60000 );
-                  $( ".timestamp" ).css( "display", "inline" );
-                });
+                var raw = then.text().trim();
+                if (!raw) return;
+
+                var date = moment(new Date(raw));
+                if (!date.isValid()) return;
+
+                function update() {
+                  then.text(date.fromNow());
+                }
+
+                update();
+                setInterval(update, 60000);
+                $(".timestamp").css("display", "inline");
+              });
+              //]]>
               </script>
 
               <div class="post-footer-right">
@@ -761,6 +772,7 @@
             <div class="comments-div">
               <div id="disqus_thread"></div>
               <script type="text/javascript">
+                //<![CDATA[
                 var disqus_config = function () {
                   this.page.url = "<$BlogItemPermalinkUrl$>";
                   this.page.identifier = "<$BlogItemNumber$>";
@@ -771,6 +783,7 @@
                   s.setAttribute('data-timestamp', +new Date());
                   (d.head || d.body).appendChild(s);
                 })();
+                //]]>
               </script>
             </div>
           </ItemPage>
@@ -799,6 +812,7 @@
         </div>
 
         <script type="text/javascript">
+          //<![CDATA[
           // If on the first page...
           if ( window.location.href === "https://www.doomretro.com/" ||
                window.location.href.indexOf( "https://www.doomretro.com/?zx=" ) > -1 ) {
@@ -817,6 +831,7 @@
               return $( this ).contents();
             });
           }
+          //]]>
         </script>
 
         <div id="buttons">
@@ -840,29 +855,33 @@
     </div>
 
     <!-- lightbox-2.6.min.js -->
-    <script src="https://rawgit.com/bradharding/www.doomretro.com/master/lightbox-2.6.min.js" type="text/javascript"></script>
-
-    <!-- jquery.qtip.min.js -->
-    <script src="https://rawgit.com/bradharding/www.doomretro.com/master/jquery.qtip.min.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/lightbox-2.6.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-      $( function() {
-        $( ".share-icon" ).each( function() {
-          $( this ).qtip({
-            style: {
-              classes: "tooltip",
-              tip: {
-                  width: 6,
-                  height: 4
-              }
-            },
-            position: {
-              my: "bottom center",
-              at: "top center"
-            }
-          });
+      //<![CDATA[
+      $(document).on("mouseenter", ".share-icon", function () {
+        var $el = $(this);
+
+        if ($el.data("qtip")) return;
+
+        $el.qtip({
+          overwrite: false,
+          style: {
+            classes: "tooltip",
+            tip: { width: 6, height: 4 }
+          },
+          position: {
+            my: "bottom center",
+            at: "top center"
+          },
+          show: {
+            event: "mouseenter",
+            ready: true
+          },
+          hide: "mouseleave"
         });
       });
+      //]]>
 
       var disqus_shortname = "doomretro";
       ( function () {
@@ -873,18 +892,16 @@
         ( document.getElementsByTagName( "head" )[0] || document.getElementsByTagName( "body" )[0] ).appendChild( s );
       }() );
 
-      $( "a[class!='short-comments'][class!='share-link'], #attribution" ).mousedown( function() {
-        $( this ).css({
-          "position": "relative",
-          "top": "1px"
+      $("a")
+        .not(".short-comments")
+        .not(".share-link")
+        .add("#attribution")
+        .on("mousedown", function () {
+          $(this).css({ position: "relative", top: "1px" });
+        })
+        .on("mouseup mouseout", function () {
+          $(this).css({ position: "static", top: "0" });
         });
-      });
-      $( "a[class!='short-comments'][class!='share-link'], #attribution" ).on( "mouseup mouseout", function() {
-        $( this ).css({
-          "position": "static",
-          "top": "0"
-        });
-      });
 
       $( ".comment-bubble" ).mousedown( function() {
         $( this ).css( "top", "11px" );
@@ -911,17 +928,36 @@
           "position": "static",
           "top": "0"
         });
-        $( ".share-icon" ).qtip( "reposition" );
+        $(".share-icon").each(function () {
+          if ($(this).data("qtip")) {
+            $(this).qtip("reposition");
+          }
+        });
       });
 
-      $.get( "https://api.github.com/repos/bradharding/doomretro/releases/latest", function( data ) {
-        if ( navigator.userAgent.indexOf( "WOW64" ) != -1 || navigator.userAgent.indexOf( "Win64" ) != -1 )
-          $latest = data.assets[1].browser_download_url;
-        else
-          $latest = data.assets[0].browser_download_url;
-      });
+      let $latest = "https://github.com/bradharding/doomretro/releases/latest";
+
+      fetch("https://api.github.com/repos/bradharding/doomretro/releases/latest")
+        .then(r => r.ok ? r.json() : Promise.reject())
+        .then(data => {
+          const is64 =
+            navigator.userAgent.includes("WOW64") ||
+            navigator.userAgent.includes("Win64");
+
+          const asset = data.assets.find(a =>
+            is64 ? a.name.includes("64") : !a.name.includes("64")
+          );
+
+          if (asset) {
+            $latest = asset.browser_download_url;
+          }
+        })
+        .catch(() => {
+          // fallback already set
+        });
 
       $(".post-title:first").append(" has been released!");
+      //]]>
     </script>
   </body>
 </html>
