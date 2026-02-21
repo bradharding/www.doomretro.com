@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <!--
 ==============================================================================
 
@@ -33,9 +35,7 @@
 ==============================================================================
 -->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
+<html lang="en" dir="<$BlogLanguageDirection$>">
 
   <head>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -92,14 +92,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
 
     <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         background-color: #888;
         color: black;
         counter-reset: figure;
         font: 600 16px Bitter, serif;
-        margin: 20px 0 25px 0 !important;
-        overflow: overlay;
+        line-height: 24px;
+        margin: 20px 0 25px 0;
         overflow-x: hidden;
+        overflow-y: scroll;
         text-align: center;
       }
 
@@ -144,7 +150,6 @@
         border-top-left-radius: 12px;
         color: #666;
         float: left;
-        line-height: 24px;
         margin: 0;
         padding: 50px 0 23px 0;
         width: 830px;
@@ -172,6 +177,7 @@
       img {
         border: none;
         user-drag: none;
+        vertical-align: top;
         -webkit-user-drag: none;
       }
 
@@ -213,6 +219,7 @@
       }
 
       .post {
+        display: flow-root;
         margin: 0 0 8px;
         padding: 0 53px 0 60px;
         position: relative;
@@ -607,8 +614,9 @@
 
       .button {
         cursor: pointer;
+        display: block;
         height: 36px;
-        margin-bottom: 5px;
+        margin: 0 auto 5px auto;
         transition: none !important;
         user-drag: none;
         -webkit-user-drag: none;
