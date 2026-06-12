@@ -909,13 +909,7 @@
       fetch("https://api.github.com/repos/bradharding/doomretro/releases/latest")
         .then(r => r.ok ? r.json() : Promise.reject())
         .then(data => {
-          const is64 =
-            navigator.userAgent.includes("WOW64") ||
-            navigator.userAgent.includes("Win64");
-
-          const asset = data.assets.find(a =>
-            is64 ? a.name.includes("64") : !a.name.includes("64")
-          );
+          const asset = data.assets.find(a => a.name.includes("64"));
 
           if (asset) {
             $latest = asset.browser_download_url;
