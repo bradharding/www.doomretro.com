@@ -661,6 +661,21 @@
         return text.replace( "<$BlogTitle$>", "%23" +
           ( ( "<$BlogTitle$>" ).replace( /\s/g, "" ) ).toLowerCase() );
       }
+
+      var $buttonImages = {};
+
+      [
+        "download1", "download2", "download3",
+        "wiki1", "wiki2", "wiki3"
+      ].forEach( function( name ) {
+        var image = new Image();
+        image.src = "https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/" + name + ".png";
+        $buttonImages[name] = image;
+
+        if ( image.decode ) {
+          image.decode().catch( function() {} );
+        }
+      } );
       //]]>
     </script>
 
@@ -811,9 +826,9 @@
         </script>
 
         <div id="buttons">
-          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png" onclick="window.open($latest,'_self')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png';this.style='filter:drop-shadow(0 0 15px rgba(0, 255, 0, 0.45))'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png';this.style='filter:none'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png'" />
+          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png" onclick="window.open($latest,'_self')" onmousedown="this.src=$buttonImages.download3.src" onmouseover="this.src=$buttonImages.download2.src;this.style='filter:drop-shadow(0 0 15px rgba(0, 255, 0, 0.45))'" onmouseout="this.src=$buttonImages.download1.src;this.style='filter:none'" onmouseup="this.src=$buttonImages.download2.src" />
 
-          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')" onmousedown="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png'" onmouseover="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png';this.style='filter:drop-shadow(0 0 15px rgba(0, 255, 0, 0.45))'" onmouseout="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png';this.style='filter:none'" onmouseup="this.src='https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png'" />
+          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')" onmousedown="this.src=$buttonImages.wiki3.src" onmouseover="this.src=$buttonImages.wiki2.src;this.style='filter:drop-shadow(0 0 15px rgba(0, 255, 0, 0.45))'" onmouseout="this.src=$buttonImages.wiki1.src;this.style='filter:none'" onmouseup="this.src=$buttonImages.wiki2.src" />
 
           <div id="gap">
           </div>
