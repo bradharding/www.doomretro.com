@@ -617,10 +617,42 @@
         display: block;
         height: 36px;
         margin: 0 auto 5px auto;
-        transition: none !important;
+        position: relative;
         user-drag: none;
         -webkit-user-drag: none;
         width: 210px;
+      }
+
+      .button img {
+        height: 36px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        user-drag: none;
+        -webkit-user-drag: none;
+        width: 210px;
+      }
+
+      .button-hover {
+        filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.45));
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+
+      .button:hover .button-hover {
+        opacity: 1;
+      }
+
+      .button-pressed {
+        opacity: 0;
+      }
+
+      .button:active .button-hover {
+        opacity: 0;
+      }
+
+      .button:active .button-pressed {
+        opacity: 1;
       }
 
       #gap {
@@ -830,9 +862,17 @@
         </script>
 
         <div id="buttons">
-          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png" onclick="window.open($latest,'_self')" onmousedown="this.src=$buttonImages.download3.src" onmouseover="this.src=$buttonImages.download2.src;this.style='filter:drop-shadow(0 0 15px rgba(0, 255, 0, 0.45))'" onmouseout="this.src=$buttonImages.download1.src;this.style='filter:none'" onmouseup="this.src=$buttonImages.download2.src" />
+          <div class="button" onclick="window.open($latest,'_self')">
+            <img class="button-normal" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download1.png" alt="">
+            <img class="button-hover" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download2.png" alt="">
+            <img class="button-pressed" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/download3.png" alt="">
+          </div>
 
-          <input class="button" type="image" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')" onmousedown="this.src=$buttonImages.wiki3.src" onmouseover="this.src=$buttonImages.wiki2.src;this.style='filter:drop-shadow(0 0 15px rgba(0, 255, 0, 0.45))'" onmouseout="this.src=$buttonImages.wiki1.src;this.style='filter:none'" onmouseup="this.src=$buttonImages.wiki2.src" />
+          <div class="button" onclick="window.open('https://github.com/bradharding/doomretro/wiki/','_blank')">
+            <img class="button-normal" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki1.png" alt="">
+            <img class="button-hover" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki2.png" alt="">
+            <img class="button-pressed" src="https://raw.githubusercontent.com/bradharding/www.doomretro.com/master/wiki3.png" alt="">
+          </div>
 
           <div id="gap">
           </div>
