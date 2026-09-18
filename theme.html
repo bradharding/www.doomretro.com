@@ -633,22 +633,30 @@
         width: 210px;
       }
 
+      .button-normal {
+        opacity: 1;
+      }
+
       .button-hover {
         filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.45));
         opacity: 0;
         transition: opacity 0.2s ease;
+        z-index: 1;
+      }
+
+      .button-pressed {
+        opacity: 0;
+        z-index: 2;
       }
 
       .button:hover .button-hover {
         opacity: 1;
       }
 
-      .button-pressed {
-        opacity: 0;
-      }
-
+      .button:active .button-normal,
       .button:active .button-hover {
         opacity: 0;
+        transition: none;
       }
 
       .button:active .button-pressed {
