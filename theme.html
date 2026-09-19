@@ -638,9 +638,10 @@
       }
 
       .button-hover {
-        filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.45));
+        filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0));
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease, filter 0.3s ease;
+        will-change: opacity, filter;
         z-index: 1;
       }
 
@@ -650,16 +651,17 @@
       }
 
       .button:hover .button-hover {
+        filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.45));
         opacity: 1;
       }
 
-      .button:active .button-normal,
-      .button:active .button-hover {
+      .button:hover:active .button-normal,
+      .button:hover:active .button-hover {
         opacity: 0;
         transition: none;
       }
 
-      .button:active .button-pressed {
+      .button:hover:active .button-pressed {
         opacity: 1;
       }
 
